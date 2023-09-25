@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <title>Welcome!</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='calculator.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <body>
+    <br>
+    <br>
+     <nav>
+    <ul>
+     <li>
+      <a href="https://loan-calculator.dhanesh1099.repl.co/"> HOME</a>
+      </li>
+      <li>
+        <a href="https://loan-calculator.dhanesh1099.repl.co/calculator"> CALCULATOR</a>
+      </li>
+      <li>
+        <a href="https://loan-calculator.dhanesh1099.repl.co/moreinfo"> MORE INFO</a>
+      </li>
+    </ul>
+
+  </nav>
+<div class = container>
+    <br>
+    <h1>Loan Calculator</h1>
+    <br>
+    <img src = "https://images.squarespace-cdn.com/content/v1/5a7cdb814c0dbf46bc4a4e3e/1550685856069-G7AZSQ17SBE5OW088LLE/Personal+Loans_2000x800.jpg?format=2500w" alt= "calc img"> 
+    <br>
+    <h2>Enter the amount you owe, then  the interest rate and the length of your contract in months</h2>
+    <br>
+    <form method="POST" action="/calculator">
+      <input type="text" name="total" placeholder="Total Amount" />
+      <input type="text" name="interest" placeholder="Interest Rate" />
+      <input type="text" name="month" placeholder="Number of Months" />
+      <input type="submit" value="Submit" />
+      
+    </form>
+    
+    {% if x %}
+      <p>Monthly Payment: {{ x }}</p>
+    {% endif %}
+  </body>
+</div>
+</html>

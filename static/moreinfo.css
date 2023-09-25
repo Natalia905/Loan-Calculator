@@ -1,0 +1,28 @@
+li {
+    display: inline;
+    word-spacing: 8em;
+    text-align: center;
+    justify-content: center;
+  }
+  h1{
+    text-align:center;
+  }
+  li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    padding: 1em;
+    letter-spacing: 0.08em;
+    font-family: 'Lato', sans-serif;
+    word-spacing: .3em;
+  }
+  
+  li a:hover{
+    background-color: #83bea0;
+    color:black;
+  }
+  
+  h3{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
